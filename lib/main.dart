@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './category_meals_screen.dart';
-import './categories_screen.dart';
+import './screens/category_meals_screen.dart';
+import './screens/categories_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
-        fontFamily: 'RobotoCondensed',
+        fontFamily: 'Raleway',
         colorScheme: theme.colorScheme
             .copyWith(primary: Colors.purple, secondary: Colors.amber),
         textTheme: ThemeData.light().textTheme.copyWith(
