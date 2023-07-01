@@ -124,9 +124,10 @@ class MealDetailScreen extends StatelessWidget {
                             )),
                           ],
                         ),
-                        const Divider(
-                          color: Colors.grey,
-                        )
+                        if (j != selectedMeal.steps.length - 1)
+                          const Divider(
+                            color: Colors.grey,
+                          )
                       ],
                     )
                 ],
