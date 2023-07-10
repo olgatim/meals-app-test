@@ -70,7 +70,7 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(categoryTitle!),
+        title: Text(categoryTitle),
         backgroundColor: categoryColor,
       ),
       body: ListView.builder(
@@ -83,7 +83,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
             complexity: displayedMeals[index].complexity,
             affordability: displayedMeals[index].affordability,
             color: categoryColor,
-            removeItem: _removeMeal,
           );
         },
         itemCount: displayedMeals.length,
